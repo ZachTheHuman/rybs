@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <!--Made by Zachary Petersen-->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Update CSS Variables</h1>
+    <h1>With JavaScript</h1>
+
+    <div class="var">
+      <div class="slidecontainer">
+        <div>
+          <label for="spacing">Border:</label>
+        </div>
+        <input
+          type="range"
+          id="spacing"
+          name="spacing"
+          min="0"
+          max="70"
+          value="0"
+          class="slider"
+          data-suffix="px"
+        />
+      </div>
+
+      <div class="slidecontainer">
+        <div>
+          <label for="blur">Blur:</label>
+        </div>
+        <input
+          type="range"
+          id="blur"
+          name="blur"
+          min="0"
+          max="30"
+          value="0"
+          class="slider"
+          data-suffix="px"
+        />
+      </div>
+
+      <div class="slidecontainer">
+        <div>
+          <label for="base">Background-Color:</label>
+        </div>
+        <input
+          type="color"
+          id="base"
+          name="base"
+          value="#ffffff"
+          style="border: solid; border-color: darkgrey"
+          data-suffix=""
+        />
+      </div>
+    </div>
+    <div class="article-inline">
+      <div class="bordercl">
+        <img src="images/robert-bock-cV4qkkorDFY-unsplash.jpg" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Kitty Clicker</title>
+    <!--Made By Zachary Petersen-->
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome To</h1>
+      <h1 class="title">Kitty Clicker</h1>
+      <h2 class ="title" id= "score" style="font-size: xx-large;"></h2>
+
+      <img src="http://placekitten.com/300/200" alt="kitty" class="cat"/>
+
+
+    </br>
+  </br>
+
+      <button type="button" name = 'disco' onclick="disco()"><h1 id="prty">DISCO</h1></button>
+      
+
+      <p class="instruction">
+        This project is inside a small container, you can click to add to the
+        counter or hold down the button to speed up the counter.
+      </p>
+
+      <h2 id="h22">Sliders change colors <span id="colorOutput"></span></h2>
+      
+      <!--sliders-->
+      <div class="sliders">
+
+        <label id="redLog">red: </label>
+      </br >
+      
+        <input type="range" name="iRed" id="rangeRed" value = "82" min = "0" max = "255" oninput="updateValues()">
+
+
+    </br >
+
+        <label id="greenLog">green:</label>
+      </br >
+        <input type="range" name="iGreen" id="rangeGreen" value = "214" min = "0" max = "255" oninput="updateValues()" />
+
+
+    </br >
+
+        <label id="blueLog">blue:</label>
+      </br >
+        <input type="range" name="iBlue" id="rangeBlue" value = "62" min = "0" max = "255" oninput="updateValues()" />
+        </div>
+
+
+    
+  
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

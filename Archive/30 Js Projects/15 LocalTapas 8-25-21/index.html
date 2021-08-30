@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Local Tapas</title>
+    <!--Made By Zachary Petersen-->
+  </head>
+  <body>
+    <div class="center-parent">
+      <div class="center">
+        <h1>Local Tapas</h1>
+        <br />
+        <form class="add-items">
+          <input type="text" name="item" placeholder="Item Name" required />
+          <input type="submit" value="+ Add Item" />
+          <button type="button" onclick="removeItem()">- Remove Item</button>
+        </form>
+        <div class="options">
+          <ul class="plates">
+            <li>loading tapas...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

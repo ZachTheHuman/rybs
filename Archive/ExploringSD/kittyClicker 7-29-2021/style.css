@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Palette+Mosaic&display=swap");
+
+.container {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66%;
+}
+
+button {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+}
+
+.title {
+  font-family: "Palette Mosaic", cursive;
+  margin-bottom: 50px;
+  font-size: 3em;
+}
+
+.center {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.sliders {
+  margin: auto;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+}

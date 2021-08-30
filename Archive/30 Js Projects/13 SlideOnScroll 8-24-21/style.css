@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap");
+
+html,
+body {
+  background-color: #86a677;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+  color: #cfd2c6;
+  padding: 0px 10%;
+  padding-top: 100px;
+}
+h2 {
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  color: #d7d9d38f;
+  padding: 0px 10%;
+  padding-bottom: 100px;
+}
+
+h3 {
+  line-height: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  color: #cfd2c6;
+  padding: 0px 10%;
+  padding-top: 20px;
+}
+
+p {
+  text-indent: 1rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: #9b9d95;
+  padding: 10px 10%;
+  margin: 10px;
+}
+
+.center {
+  min-width: min-content;
+  width: 66%;
+  margin: auto;
+  background-color: #1b2222;
+}
+
+div.sliderCont1 {
+  display: block;
+  min-width: 450px;
+  max-width: 700px;
+  width: 55%;
+  margin: auto;
+  padding: 10px 10%;
+  float: right;
+}
+div.sliderCont2 {
+  display: block;
+  min-width: 450px;
+  max-width: 700px;
+  width: 55%;
+  margin: auto;
+  padding: 10%;
+  float: center;
+}
+
+img.inactive {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-left: 100px;
+  opacity: 0;
+  transition: margin-left 1s, opacity 1s;
+  transition-timing-function: cubic-bezier(0.25, 0.34, 0.61, 0.89);
+}
+
+img.active {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-left: 0px;
+  opacity: 1;
+  transition: margin-left 1s, opacity 1s;
+  transition-timing-function: cubic-bezier(0.39, 0.75, 0.69, 1.22);
+}
+
+iframe.inactive {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-left: 100px;
+  opacity: 0;
+  transition: margin-left 1s, opacity 1s;
+  transition-timing-function: cubic-bezier(0.25, 0.34, 0.61, 0.89);
+}
+
+iframe.active {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-left: 0px;
+  opacity: 1;
+  transition: margin-left 1s, opacity 1s;
+  transition-timing-function: cubic-bezier(0.39, 0.75, 0.69, 1.22);
+}

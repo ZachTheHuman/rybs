@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <!--Made by Zachary Petersen-->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>Custom Video Player</h3>
+    <h2>Presents:</h2>
+    <h1>Big Chungus!</h1>
+    <div class="player">
+      <video
+        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        class="viewer"
+        id="vid"
+        autoplay
+      >
+        <!--shows up when the browser doesn't play video-->
+        Oops! looks like your browser isn't COOL enough to play this video.
+        LAAAME.
+      </video>
+      <div class="controls-overlay">
+        <!--Progress Slider-->
+        <div class="progresscontainer">
+          <div class="progressbar"></div>
+          <input
+            type="range"
+            min="0"
+            max="1000"
+            value="30"
+            class="progress"
+            id="progress"
+            onchange="setProg(this.value)"
+            oninput="drag(this.value)"
+          />
+        </div>
+
+        <!--Buttons-->
+        <div class="ctrlL">
+          <button onclick="playPause()" id="p">►</button>
+        </div>
+        <div class="ctrlL">
+          <label>🔊</label
+          ><input
+            type="range"
+            max="100"
+            min="0"
+            id="vol"
+            oninput="setVolume(this.value)"
+          />
+        </div>
+
+        <div class="ctrlR">
+          <button onclick="skip(5)" id="r">
+            <strong>5</strong>
+            <p style="display: inline; font-size: 140%">⇒</p>
+          </button>
+        </div>
+        <div class="ctrlR">
+          <button onclick="skip(-5)" id="l">
+            <p style="display: inline; font-size: 140%">⇐</p>
+            <strong> 5</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      Video courtesy of
+      <a href="https://www.bigbuckbunny.org/" target="_blank">Blender</a>.
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
